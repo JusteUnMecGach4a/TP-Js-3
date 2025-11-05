@@ -30,4 +30,11 @@
             elementAfficheur.innerHTML = valeur;
         }
     }
-    ```
+
+---
+
+## Informations sur le Code Existant (commande.html)
+
+* **Utilisation de la dimension réelle de l'écran (Responsive) :**
+    * La ligne permettant d'utiliser une dimension réelle (adaptative) de l'écran est :
+      **`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**
