@@ -5,6 +5,6 @@ function definitionFenetre(){
 }
 
 function info(valeur, identifiant) {
-    const elementAfficheur = document.getElementById(identifiant);
-        elementAfficheur.innerHTML = valeur;
+	document.getElementById(identifiant).innerHTML = valeur;
 }
+
