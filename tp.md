@@ -25,9 +25,9 @@
 * **Contenu final de formu.js (extrait des modifications):**
     ```javascript
     function info(valeur, identifiant) {
-        const elementAfficheur = document.getElementById(identifiant);
-        if (elementAfficheur) {
-            elementAfficheur.innerHTML = valeur;
+
+        
+           document.getElementById(identifiant);.innerHTML = valeur;
         }
     }
     ```
