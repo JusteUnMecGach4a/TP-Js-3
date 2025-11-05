@@ -19,16 +19,22 @@
     * Déclaration de la fonction **`info(valeur, identifiant)`**.
 
 * **Rôle de la fonction `info`:**
-    * Elle récupère l'élément du DOM (la balise bloc `div`) par son **`identifiant`**.
-    * Elle modifie le contenu de cet élément en utilisant la propriété **`innerHTML`** pour afficher la **`valeur`** passée en paramètre.
+    * Elle modifie le contenu de la balise bloc associée en utilisant la propriété **`innerHTML`**.
+
+* **Optimisation de la fonction `info` (selon le principe "tant que ça fonctionne") :**
+    * Suppression de la variable `const` et de la condition `if`.
+    * L'instruction est réduite à l'action unique nécessaire.
 
 * **Contenu final de formu.js (extrait des modifications):**
     ```javascript
+    function definitionFenetre(){
+        var largeur = window.innerWidth;
+        var hauteur = window.innerHeight;
+        console.log("Définition : "+largeur+'*'+hauteur);
+    }
+
     function info(valeur, identifiant) {
-        const elementAfficheur = document.getElementById(identifiant);
-        if (elementAfficheur) {
-            elementAfficheur.innerHTML = valeur;
-        }
+        document.getElementById(identifiant).innerHTML = valeur;
     }
     ```
 
