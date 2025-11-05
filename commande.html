@@ -31,64 +31,64 @@
 			<form action="" method="post">
 				<div id="intensite">
 					<p>Intensité</p>
-					<input id="intensiteRange" type="range" name="intensite" step="1" min="0" max="255" value="50" orient="vertical">
+					<input id="intensiteRange" type="range" name="intensite" step="1" min="0" max="255" value="50" orient="vertical" oninput="info(this.value, 'intensiteValue')">
 					<div id="intensiteValue" class="range-value">50</div>
 					
 				</div>
 
 				<div id="inclinaison">
 					<p>Inclinaison</p>
-					<input id="inclinaisonRange" type="range" name="inclinaison" step="1" min="0" max="255" value="128" orient="vertical">
+					<input id="inclinaisonRange" type="range" name="inclinaison" step="1" min="0" max="255" value="128" orient="vertical" oninput="info(this.value, 'inclinaisonValue')">
 					<div id="inclinaisonValue" class="range-value">128</div>
 					
 				</div>
 
 				<div id="rotor">
 					<p>Rotation</p>
-					<input id="rotationRange" type="range" name="rotation" step="1" min="0" max="255" value="128" orient="vertical">
+					<input id="rotationRange" type="range" name="rotation" step="1" min="0" max="255" value="128" orient="vertical" oninput="info(this.value, 'rotationValue')">
 					<div id="rotationValue" class="range-value">128</div>
 					
 				</div>
 
 				<div id="color">
 					<div class="blanc">
-						<input type="radio" name="couleur" value="128"> 
+						<input type="radio" name="couleur" value="128"> 
 					</div>
 
 					<div class="bleu">
-						<input type="radio" name="couleur" value="129" checked="true"> 
+						<input type="radio" name="couleur" value="129" checked="true"> 
 					</div>
 
 					<div class="red">
-						<input type="radio" name="couleur" value="136"> 
+						<input type="radio" name="couleur" value="136"> 
 					</div>
 
 					<div class="jaune">
-						<input type="radio" name="couleur" value="143"> 
+						<input type="radio" name="couleur" value="143"> 
 					</div>
 
 					<div class="magenta">
-						<input type="radio" name="couleur" value="150"> 
+						<input type="radio" name="couleur" value="150"> 
 					</div>
 
 					<div class="cyan">
-						<input type="radio" name="couleur" value="160"> 
+						<input type="radio" name="couleur" value="160"> 
 					</div>
 
 					<div class="green">
-						<input type="radio" name="couleur" value="170"> 
+						<input type="radio" name="couleur" value="170"> 
 					</div>
 
 					<div class="orang">
-						<input type="radio" name="couleur" value="175"> 
+						<input type="radio" name="couleur" value="175"> 
 					</div>
 
 					<div class="violet">
-						<input type="radio" name="couleur" value="180"> 
+						<input type="radio" name="couleur" value="180"> 
 					</div>
 
 					<div class="rose">
-						<input type="radio" name="couleur" value="190"> 
+						<input type="radio" name="couleur" value="190"> 
 					</div>
 					
 					<div id="rota">
@@ -118,12 +118,12 @@
 						<input type="radio" name="gobo" value="0">
 					</div>
 
-					<div class="gobo"> 
+					<div class="gobo"> 
 						<img src="images/gobo1.gif">
 						<input type="radio" name="gobo" value="16" checked="true">
 					</div>
 
-					<div class="gobo"> 
+					<div class="gobo"> 
 						<img src="images/gobo2.gif">
 						<input type="radio" name="gobo" value="32">
 					</div>
@@ -157,11 +157,11 @@
 						<img src="images/goborandom.gif">
 						<input type="radio" name="gobo" value="127">
 					</div>
-					</div> 
+					</div> 
 					
 					<div id="bouton">
 						<input type="submit" name="envoi" value="Envoyer">
-						<input type="reset" value="Effacer"> 
+						<input type="reset" value="Effacer"> 
 					</div>
 				</form>
 			</div>
