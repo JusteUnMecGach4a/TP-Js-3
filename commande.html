@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Projecteur DMX</title>
+		
+	</head>
+<body onresize="definitionFenetre()">
+<div id="page">
+	<header>
+		<img src="images/logo.PNG">
+		<h1>Projecteur commandé par la norme DMX 512</h1>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="index.html">Accueil</a></li>
+		<li><a href="present.html">Présentation</a></li>
+		<li><a href="fox.html">Carte Fox G20</a></li>
+		<li><a href="trame.html">Protocole</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="commande.html">Commande</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h1>Commande du Projecteur</h1>
+		<div id="commande">
+			<form action="" method="post">
+				<div id="intensite">
+					<p>Intensité</p>
+					<input	type="range" name="intensite" step="1" min="0" max="255" value="50" orient="vertical" >
+					
+				</div>
+
+				<div id="inclinaison">
+					<p>Inclinaison</p>
+					<input type="range" name="inclinaison" step="1" min="0" max="255" value="128" orient="vertical">
+					
+				</div>
+
+				<div id="rotor">
+					<p>Rotation</p>
+					<input type="range" name="rotation" step="1" min="0" max="255" value="128" orient="vertical">
+					
+				</div>
+
+				<div id="color">
+					<div class="blanc">
+						<input type="radio" name="couleur" value="128"> 
+					</div>
+
+					<div class="bleu">
+						<input type="radio" name="couleur" value="129" checked="true"> 
+					</div>
+
+					<div class="red">
+						<input type="radio" name="couleur" value="136"> 
+					</div>
+
+					<div class="jaune">
+						<input type="radio" name="couleur" value="143"> 
+					</div>
+
+					<div class="magenta">
+						<input type="radio" name="couleur" value="150"> 
+					</div>
+
+					<div class="cyan">
+						<input type="radio" name="couleur" value="160"> 
+					</div>
+
+					<div class="green">
+						<input type="radio" name="couleur" value="170"> 
+					</div>
+
+					<div class="orang">
+						<input type="radio" name="couleur" value="175"> 
+					</div>
+
+					<div class="violet">
+						<input type="radio" name="couleur" value="180"> 
+					</div>
+
+					<div class="rose">
+						<input type="radio" name="couleur" value="190"> 
+					</div>
+			
+					<div id="rota">
+						<p>Rotation des motifs :</p>
+			
+						<div class="sens1">
+							<img src="images/horaire.jpg">
+							<input type="radio" name="sens" value="70" checked="true">
+						</div>
+
+						<div class="sens">
+							<img src="images/antihoraire.jpg">
+							<input type="radio" name="sens" value="130">
+						</div>
+
+						<div class="sens">
+							<img src="images/rotation.jpg">
+							<input type="radio" name="sens" value="230">
+						</div>
+					</div>
+				</div>
+		
+				<div id="gobos">
+					<p>Gobos</p>
+					<div class="gobo">
+						<img src="images/gobo0.gif">
+						<input type="radio" name="gobo" value="0">
+					</div>
+
+					<div class="gobo">	
+						<img src="images/gobo1.gif">
+						<input type="radio" name="gobo" value="16" checked="true">
+					</div>
+
+					<div class="gobo">	
+						<img src="images/gobo2.gif">
+						<input type="radio" name="gobo" value="32">
+					</div>
+
+					<div class="gobo">
+						<img src="images/gobo3.gif">
+						<input type="radio" name="gobo" value="48">
+					</div>
+
+					<div class="gobo">
+						<img src="images/gobo4.gif">
+						<input type="radio" name="gobo" value="64">
+					</div>
+
+					<div class="gobo">
+						<img src="images/gobo5.gif">
+						<input type="radio" name="gobo" value="80">
+					</div>
+
+					<div class="gobo">
+						<img src="images/gobo6.gif">
+						<input type="radio" name="gobo" value="96">
+					</div>
+
+					<div class="gobo">
+						<img src="images/gobo7.gif">
+						<input type="radio" name="gobo" value="112">
+					</div>
+
+					<div class="gobo">
+						<img src="images/goborandom.gif">
+						<input type="radio" name="gobo" value="127">
+					</div>
+				</div>	
+
+				<div id="bouton">
+					<input type="submit" name="envoi" value="Envoyer">
+					<input type="reset" value="Effacer"> 
+				</div>
+			</form>
+		</div>
+	</article>
+
+	<footer>
+		<p>Site à visée pédagogique pour les étudiants du BTS1 CIEL du lycée Poincaré de Bar-le-Duc</p>
+		<p>Le contenu de ce site n'est pas destiné à une publication sur Internet.</p>
+	</footer>
+</div>
+</body>
+</html>
